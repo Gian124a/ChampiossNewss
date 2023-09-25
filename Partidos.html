@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Belanosima&family=Heebo:wght@500&family=Kanit:ital@1&family=Lato&family=Montserrat:wght@100;200&family=Noto+Sans+Display:wght@300;400&family=Noto+Sans+JP:wght@200&family=Oswald:wght@500&family=Righteous&family=Roboto+Condensed&family=Roboto:wght@100;500&family=Slabo+27px&family=Ubuntu+Condensed&family=Ubuntu:wght@300;400;500&family=Victor+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Partidos.css">
+    <script src="Funcion.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="Contenedor-Botones" onclick="Boton2()">
+            <span class="material-symbols-outlined">settings</span>
+        </div>
+        <div class="Contenedor-Menu Menu" id="Menu">
+            <ul class="Lista Lista-Menu">
+                <a href="#"><li><span class="material-symbols-outlined">newspaper</span>Noticias</li></a>
+                <a href="#"><li><span class="material-symbols-outlined">sports_soccer</span>Partidos</li></a>
+                <a href="Equipos.html"><li><span class="material-symbols-outlined">shield</span>Equipos</li></a>
+                <a href="#">
+                    <li>
+                        <div class="Contenedor-Grupo">
+                            <span class="material-symbols-outlined">shield</span>
+                            <span class="material-symbols-outlined">shield</span>
+                            <span class="material-symbols-outlined">shield</span>
+                        </div>
+                        Grupos
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <a href="#" class="Contenedor-Titulo">
+            <img src="imagenes/news champions.png" alt="">
+            <h1>ChampionsNews</h1>
+        </a>
+        <nav class="Contenedor-Menu nav" id="nav">
+            <ul class="Lista Lista-nav">
+                <a href="#"><li><span class="material-symbols-outlined search">search</span><span class="Buscar">Buscar</span></li></a>
+                <a href="index.html"><li><span class="material-symbols-outlined settings">settings</span><span class="Confi">Configuracion</span></li></a>
+                <a href="CrearCuenta.html"><li><span class="material-symbols-outlined">person_add</span><span>Crear Cuenta</span></li></a>
+                <a href="Sesion.html"><li><span class="material-symbols-outlined">account_circle</span><span>Iniciar Sesion</span></li></a>
+            </ul>
+        </nav>
+        <div class="Contenedor-Botones" id="Contenedor-Botones" onclick="Boton()">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+    </header>
+    <section class="Contenedor-Partidos">
+        <div class="Partidos-TItulo">
+            <h1>Partidos</h1>
+        </div>
+        <div class="Eleccion-Fechas">
+            <div class="Eleccion">
+                <div class="Fecha-Elegida">
+                    <p>Fecha 1</p>
+                </div>
+                <div class="Flecha">
+                    <span class="material-symbols-outlined">expand_more</span>
+                </div>
+            </div>
+        </div>
+        <div class="Partidos">
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/milan.png" alt="Milan">
+                                </div>
+                                
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Milan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Newcastle</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Young Boys</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Leipzig</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>PSG</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Dortmunt</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Shakhtar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Oporto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Manchester City</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Estrella Roja</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Lazio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Atletico Madrid</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Barcelona</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Antwerp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Feyenoord</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Celtic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Real Madrid</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Union Berlin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Galatasaray</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Kopenague</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Bayern</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Man United</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Benfica</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Salzburg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Braga</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Napoli</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Arsenal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>PSV</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Sevilla</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Lens</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Partido-Uno">
+                <div class="Fecha-dia">
+                    <div class="Fecha">
+                        <p>Fecha 1</p>
+                    </div>
+                    <p class="Dia">Martes</p>
+                </div>
+                <div class="Equipos-Fecha">
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Real Sociedad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="VS-Hora">
+                            <div class="VS">
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>VS</p>
+                                </div>
+                                <div class="Resultado">
+                                    <p>0</p>
+                                </div>
+                                
+                            </div>
+                            <div class="Hora-Partido">
+                                <p>3:00 pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="Partido-Equipos">
+                        <div class="Escudo-Texto">
+                            <div class="Escudo-Equipo">
+                                <div class="Imagen-Equipo">
+                                    <img src="imagenes/barcelona.png" alt="Milan">
+                                </div>
+                            </div>
+                            <div class="Nombre-Equipo">
+                                <p>Inter</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="Footer-Redes">
+            <div class="Titulo">
+                <h3>Redes Sociales</h3>
+            </div>
+            <ul class="Lista-Footer">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+        </div>
+        <div class="Footer-Titulo">
+            <img src="imagenes/news champions.png" alt="">
+            <h1>ChampionsNews</h1>
+        </div>
+        <div class="Footer-Opciones">
+            <div class="Titulo">
+                <h3>Otras Cosas:</h3>
+            </div>
+            <ul class="Lista-Footer ListaOtros">
+                <li><a href="#">Equipos</a></li>
+                <li><a href="#">Partidos</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Grupos</a></li>
+            </ul>
+        </div>
+        <div class="Patrocineos">
+            <img src="imagenes/pepsi.png" alt="" id="Pepsi">
+            <img src="imagenes/adidas.png" alt="">
+            <img src="imagenes/fifa.png" alt="">
+            <img src="imagenes/logo-Mastercard.png" alt="">
+            <img src="imagenes/sony.png" alt="">
+            <img src="imagenes/Logo-lays.png" alt="">
+            <img src="imagenes/nissan.png" alt="">
+        </div>
+        <div class="Derechos">
+            <p>Derechos reservados por Gianfranco</p>
+        </div>
+    </footer>
+</body>
+</html>

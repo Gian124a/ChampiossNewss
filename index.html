@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Funcion.js"></script>
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Belanosima&family=Heebo:wght@500&family=Kanit:ital@1&family=Lato&family=Montserrat:wght@100;200&family=Noto+Sans+Display:wght@300;400&family=Noto+Sans+JP:wght@200&family=Oswald:wght@500&family=Righteous&family=Roboto+Condensed&family=Roboto:wght@100;500&family=Slabo+27px&family=Ubuntu+Condensed&family=Ubuntu:wght@300;400;500&family=Victor+Mono&display=swap" rel="stylesheet">
+    <!-- ------------------------------------------- -->
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- ------------------------------------------- -->
+    <title>Perfil</title>
+    <link rel="stylesheet" href="Perfil.css">
+</head>
+<body>
+    <header>
+        <div class="Contenedor-Botones" onclick="Boton2()">
+            <span class="material-symbols-outlined">settings</span>
+        </div>
+        <div class="Contenedor-Menu Menu" id="Menu">
+            <ul class="Lista Lista-Menu">
+                <a href="#"><li><span class="material-symbols-outlined">newspaper</span>Noticias</li></a>
+                <a href="Partidos.html"><li><span class="material-symbols-outlined">sports_soccer</span>Partidos</li></a>
+                <a href="Equipos.html"><li><span class="material-symbols-outlined">shield</span>Equipos</li></a>
+                <a href="#">
+                    <li>
+                        <div class="Contenedor-Grupo">
+                            <span class="material-symbols-outlined">shield</span>
+                            <span class="material-symbols-outlined">shield</span>
+                            <span class="material-symbols-outlined">shield</span>
+                        </div>
+                        Grupos
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <a href="#" class="Contenedor-Titulo">
+            <img src="imagenes/news champions.png" alt="">
+            <h1>ChampionsNews</h1>
+        </a>
+        <nav class="Contenedor-Menu nav" id="nav">
+            <ul class="Lista Lista-nav">
+                <a  href="#" onclick="BotonBusqueda()"><li ><span class="material-symbols-outlined search">search</span><span class="Buscar">Buscar</span></li></a>
+                <a href="index.html"><li><span class="material-symbols-outlined settings">settings</span><span class="Confi">Configuracion</span></li></a>
+                <a href="CrearCuenta.html"><li><span class="material-symbols-outlined">person_add</span><span>Crear Cuenta</span></li></a>
+                <a href="Entrada/Sesion.html"><li><span class="material-symbols-outlined">account_circle</span><span>Iniciar Sesion</span></li></a>
+            </ul>
+        </nav>
+        <div class="Contenedor-Botones" id="Contenedor-Botones" onclick="Boton()">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+    </header>
+
+    <div class="Fondo"></div>
+    <section class="Busqueda">
+        <button class="X" onclick="BotonCerrar()"><span class="material-symbols-outlined">close</span></button>
+        <div class="Barra-busqueda">
+            <input type="text" placeholder="Busqueda...">
+            <button><span class="material-symbols-outlined search">search</span><span class="Buscar"></span></button>
+        </div>
+        <div class="Historial">
+
+        </div>
+    </section>
+
+    <section class="Contenedor-Perfil">
+        <div class="Titulo-Perfil">
+            <h1 id="Perfilito">Tu perfil</h1>
+        </div>
+        <div class="Opcion-Perfil">
+            <div class="Opciones">
+                <div onclick="Opciones()"><span class="material-symbols-outlined">person</span></div>
+                <div onclick="Opciones2()"><span class="material-symbols-outlined">perm_contact_calendar</span></div>
+                <div onclick="Opciones3()"><span class="material-symbols-outlined">settings</span></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="Contenido-Perfil">
+            <div class="Perfil" id="Perfil-Datos">
+                <div class="Contenedor-Imagen">
+                    <div class="Imagen">
+                        <img src="imagenes/yo.jpg" alt="">
+                    </div>
+                </div>
+                
+                <div class="Contenedor-Info">
+                    <h3>Gianfranco Munoz</h3>
+                    <p>Periodista</p>
+                    <p class="Descripcion">Soy un gran periodista del futbol sobre todo europeo y me encargo de dar informacion del F.C Barcelona</p>
+                </div>
+                <div class="Contenedor-SPM">
+                    <div class="Seguidores">
+                        <div class="Titulo-Datos">
+                            <h3>Seguidores</h3>
+                        </div>
+                        
+                        <div class="Datos">
+                            <p>50k</p>
+                        </div>
+                    </div>
+                    <div class="Publicaciones">
+                        <div class="Titulo-Datos">
+                            <h3>Publicaciones</h3>
+                        </div>
+                        
+                        <div class="Datos">
+                            <p>1k</p>
+                        </div>
+                    </div>
+                    <div class="Likes">
+                        <div class="Titulo-Datos">
+                            <h3>Likes</h3>
+                        </div>
+                        
+                        <div class="Datos">
+                            <p>200k</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" class="Contenedor-Ajustes" id="Ajustes">
+                <div class="Contenedor-Inputs">
+                    <div class="Contenedor-IL">
+                        <input type="text">
+                        <label for="">Nombre</label>
+                    </div>
+                </div>
+                <div class="Contenedor-Inputs">
+                    <div class="Contenedor-IL">
+                        <input type="text">
+                        <label for="">Apellido</label>
+                    </div>
+                </div>
+                <div class="Contenedor-Inputs">
+                    <div class="Contenedor-IL">
+                        <input type="text">
+                        <label for="">Cedula</label>
+                    </div>
+                </div>
+                <div class="Contenedor-Inputs">
+                    <div class="Contenedor-IL">
+                        <input type="text">
+                        <label for="">Telefono</label>
+                    </div>
+                </div>
+                <div class="Contenedor-Inputs">
+                    <div class="Contenedor-IL">
+                        <input type="text">
+                        <label for="">Edad</label>
+                    </div>
+                </div>
+                <div class="Contenedor-Inputs">
+                    <div class="Contenedor-IL">
+                        <input type="text">
+                        <label for="">Usuario</label>
+                    </div>
+                </div>
+                <div class="Contenedor-Inputs">
+                    <div class="Contenedor-IL">
+                        <input type="text">
+                        <label for="">Email</label>
+                    </div>
+                </div>
+                <div class="Contenedor-Inputs">
+                    <div class="Contenedor-IL">
+                        <input type="text">
+                        <label for="">Password</label>
+                    </div>
+                    <div class="Cambio-Password">
+                        <a href="#"><p>Deseas Cambiar tu Password?</p></a>
+                    </div>
+                </div>
+                <div class="Contenedor-Boton">
+                    <input type="submit" value="Confirmar Cambio">
+                </div>
+            </form>
+            <div class="Configuracion" id="Confi">
+                <div class="Configuraciones">
+                    <div class="Opcion-Texto">
+                        <h4>Fondo Oscuro / Claro</h4>
+                        <p>Para definir el fondo claro o Oscuro</p>
+                    </div>
+                    <div class="Boton-Active">
+                        <div id="Botoncito">
+                            <button id="Buttoncito" onclick="Botoncito()"></button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="Configuraciones">
+                    <div class="Opcion-Texto">
+                        <h4>Notificaciones</h4>
+                        <p>Te llegaran noticias de los Lideres de ChampionsNews</p>
+                    </div>
+                    <div class="Boton-Active">
+                        <div id="Botoncito">
+                            <button id="Buttoncito" onclick="Botoncito()"></button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="Configuraciones">
+                    <div class="Opcion-Texto">
+                        <h4>Subscripciones</h4>
+                        <p>Te llegaran publicaciones de la gente a la cual estas subscrita </p>
+                    </div>
+                    <div class="Boton-Active">
+                        <div id="Botoncito">
+                            <button id="Buttoncito" onclick="Botoncito()"></button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="Configuraciones">
+                    <div class="Opcion-Texto">
+                        <h4>Menciones</h4>
+                        <p>Prodras ver quien te menciona</p>
+                    </div>
+                    <div class="Boton-Active">
+                        <div id="Botoncito">
+                            <button id="Buttoncito" onclick="Botoncito()"></button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="Configuraciones">
+                    <div class="Opcion-Texto">
+                        <h4>Contenido Compartido</h4>
+                        <p>Prodras ver la gente que comparte tus publicaciones</p>
+                    </div>
+                    <div class="Boton-Active">
+                        <div id="Botoncito">
+                            <button id="Buttoncito" onclick="Botoncito()"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Configuraciones">
+                    <div class="Opcion-Texto">
+                        <h4>Idioma</h4>
+                        <p>Para definir el idioma que quieres que este la pagina</p>
+                    </div>
+                    <div class="Boton-Active">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+    <footer>
+        <div class="Footer-Redes">
+            <div class="Titulo">
+                <h3>Redes Sociales</h3>
+            </div>
+            <ul class="Lista-Footer">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+        </div>
+        <div class="Footer-Titulo">
+            <img src="imagenes/news champions.png" alt="">
+            <h1>ChampionsNews</h1>
+        </div>
+        <div class="Footer-Opciones">
+            <div class="Titulo">
+                <h3>Otras Cosas:</h3>
+            </div>
+            <ul class="Lista-Footer ListaOtros">
+                <li><a href="#">Equipos</a></li>
+                <li><a href="#">Partidos</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Grupos</a></li>
+            </ul>
+        </div>
+        <div class="Patrocineos">
+            <img src="imagenes/pepsi.png" alt="" id="Pepsi">
+            <img src="imagenes/adidas.png" alt="">
+            <img src="imagenes/fifa.png" alt="">
+            <img src="imagenes/logo-Mastercard.png" alt="">
+            <img src="imagenes/sony.png" alt="">
+            <img src="imagenes/Logo-lays.png" alt="">
+            <img src="imagenes/nissan.png" alt="">
+        </div>
+        <div class="Derechos">
+            <p>Derechos reservados por Gianfranco</p>
+        </div>
+    </footer>
+</body>
+</html>

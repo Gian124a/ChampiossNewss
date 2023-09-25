@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Funcion.js"></script>
+    <link rel="stylesheet" href="Sesion.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Belanosima&family=Heebo:wght@500&family=Kanit:ital@1&family=Lato&family=Montserrat:wght@100;200&family=Noto+Sans+Display:wght@300;400&family=Noto+Sans+JP:wght@200&family=Oswald:wght@500&family=Righteous&family=Roboto+Condensed&family=Roboto:wght@100;500&family=Slabo+27px&family=Ubuntu+Condensed&family=Ubuntu:wght@300;400;500&family=Victor+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="Contenedor-Botones" onclick="Boton2()">
+            <span class="material-symbols-outlined">settings</span>
+        </div>
+        <div class="Contenedor-Menu Menu" id="Menu">
+            <ul class="Lista Lista-Menu">
+                <a href="#"><li><span class="material-symbols-outlined">newspaper</span>Noticias</li></a>
+                <a href="Partidos.html"><li><span class="material-symbols-outlined">sports_soccer</span>Partidos</li></a>
+                <a href="Equipos.html"><li><span class="material-symbols-outlined">shield</span>Equipos</li></a>
+                <a href="#">
+                    <li>
+                        <div class="Contenedor-Grupo">
+                            <span class="material-symbols-outlined">shield</span>
+                            <span class="material-symbols-outlined">shield</span>
+                            <span class="material-symbols-outlined">shield</span>
+                        </div>
+                        Grupos
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <a href="#" class="Contenedor-Titulo">
+            <img src="imagenes/news champions.png" alt="">
+            <h1>ChampionsNews</h1>
+        </a>
+        <nav class="Contenedor-Menu nav" id="nav">
+            <ul class="Lista Lista-nav">
+                <a href="#"><li><span class="material-symbols-outlined search">search</span><span class="Buscar">Buscar</span></li></a>
+                <a href="index.html"><li><span class="material-symbols-outlined settings">settings</span><span class="Confi">Configuracion</span></li></a>
+                <a href="CrearCuenta.html"><li><span class="material-symbols-outlined">person_add</span><span>Crear Cuenta</span></li></a>
+                <a href="#"><li><span class="material-symbols-outlined">account_circle</span><span>Iniciar Sesion</span></li></a>
+            </ul>
+        </nav>
+        <div class="Contenedor-Botones" id="Contenedor-Botones" onclick="Boton()">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+    </header>
+
+    <form action="" class="Contenedor-Sesion">
+        <div class="Datos">
+            <h1>Iniciar Sesion</h1>
+        </div>
+        <div class="Datos">
+            <div class="Contenedor-Inputs">
+                <input type="Email">
+                <label for="">Email</label>
+            </div>
+            <div class="Contenedor-Inputs">
+                <input type="password">
+                <label for="">Password</label>
+            </div>
+            <div class="Pass">
+                <a href="#"><p>Deseas Recuperar tu password?</p></a>
+            </div>
+        </div>
+        <div class="Datos">
+            <div class="Contenedor-Metodos">
+                <div>
+                    <img src="imagenes/logoFacebook.webp" alt="">
+                </div>
+                <p>Iniciar con Facebook</p>
+            </div>
+            <div class="Contenedor-Metodos">
+                <div>
+                    <img src="imagenes/loguitoGoogle.png" alt="">
+                </div>
+                <p>Iniciar con Google</p>
+            </div>
+        </div>
+        <div class="Datos">
+            <input type="submit" value="Iniciar Sesion">
+        </div>
+    </form>
+    <footer>
+        <div class="Footer-Redes">
+            <div class="Titulo">
+                <h3>Redes Sociales</h3>
+            </div>
+            <ul class="Lista-Footer">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+            </ul>
+        </div>
+        <div class="Footer-Titulo">
+            <img src="imagenes/news champions.png" alt="">
+            <h1>ChampionsNews</h1>
+        </div>
+        <div class="Footer-Opciones">
+            <div class="Titulo">
+                <h3>Otras Cosas:</h3>
+            </div>
+            <ul class="Lista-Footer ListaOtros">
+                <li><a href="#">Equipos</a></li>
+                <li><a href="#">Partidos</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Grupos</a></li>
+            </ul>
+        </div>
+        <div class="Patrocineos">
+            <img src="imagenes/pepsi.png" alt="" id="Pepsi">
+            <img src="imagenes/adidas.png" alt="">
+            <img src="imagenes/fifa.png" alt="">
+            <img src="imagenes/logo-Mastercard.png" alt="">
+            <img src="imagenes/sony.png" alt="">
+            <img src="imagenes/Logo-lays.png" alt="">
+            <img src="imagenes/nissan.png" alt="">
+        </div>
+        <div class="Derechos">
+            <p>Derechos reservados por Gianfranco</p>
+        </div>
+    </footer>
+</body>
+</html>
