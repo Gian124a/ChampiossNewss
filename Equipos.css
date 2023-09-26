@@ -219,6 +219,8 @@ nav{
     align-items: center;
 }
 .Imagen-equipo img{
+    display: block;
+    max-width: 100%;
     width: 50px;
 }
 .Fondo-Texto{
