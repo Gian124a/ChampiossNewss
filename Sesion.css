@@ -414,7 +414,7 @@ footer{
     position: absolute;
     width: 100%;
     min-width: 375px;
-    top: calc(100% + 10px);
+    top: 100%;
     display: grid;
     grid-template-columns: minmax(105px, 215px) minmax(110px, 215px) minmax(105px, 215px);
     grid-template-rows: 150px 55px 40px;
